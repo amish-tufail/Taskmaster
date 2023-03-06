@@ -10,3 +10,5 @@ import SwiftUI
 var backgroundGradient: LinearGradient {
   return LinearGradient(gradient: Gradient(colors: [Color.pink, Color.blue]), startPoint: .topLeading, endPoint: .bottomTrailing)
 }
+
+let feedback = UINotificationFeedbackGenerator()

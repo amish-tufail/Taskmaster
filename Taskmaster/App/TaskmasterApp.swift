@@ -10,11 +10,13 @@ import SwiftUI
 @main
 struct TaskmasterApp: App {
     let persistenceController = PersistenceController.shared
+    @AppStorage("darkMode") var isDarkMode: Bool = false
 
     var body: some Scene {
         WindowGroup {
             ContentView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                .preferredColorScheme(isDarkMode ? .dark : .light)
         }
     }
 }

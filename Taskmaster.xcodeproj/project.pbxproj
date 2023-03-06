@@ -18,6 +18,11 @@
 		EED1969029B4E0890010579C /* sound-tap.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EED1968D29B4E0890010579C /* sound-tap.mp3 */; };
 		EED1969A29B6343E0010579C /* HideKeyboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED1969929B6343E0010579C /* HideKeyboardExtension.swift */; };
 		EED1969C29B6360D0010579C /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED1969B29B6360D0010579C /* Constant.swift */; };
+		EED1969E29B637F90010579C /* NewTaskItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED1969D29B637F90010579C /* NewTaskItemView.swift */; };
+		EED196A029B63C0E0010579C /* BlankView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED1969F29B63C0E0010579C /* BlankView.swift */; };
+		EED196A229B644570010579C /* ListRowItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED196A129B644570010579C /* ListRowItemView.swift */; };
+		EED196A429B6468C0010579C /* CheckBoxStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED196A329B6468C0010579C /* CheckBoxStyle.swift */; };
+		EED196A629B64A980010579C /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED196A529B64A980010579C /* SoundPlayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +39,11 @@
 		EED1969829B4ED4A0010579C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		EED1969929B6343E0010579C /* HideKeyboardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideKeyboardExtension.swift; sourceTree = "<group>"; };
 		EED1969B29B6360D0010579C /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		EED1969D29B637F90010579C /* NewTaskItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskItemView.swift; sourceTree = "<group>"; };
+		EED1969F29B63C0E0010579C /* BlankView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlankView.swift; sourceTree = "<group>"; };
+		EED196A129B644570010579C /* ListRowItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowItemView.swift; sourceTree = "<group>"; };
+		EED196A329B6468C0010579C /* CheckBoxStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxStyle.swift; sourceTree = "<group>"; };
+		EED196A529B64A980010579C /* SoundPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +112,9 @@
 			isa = PBXGroup;
 			children = (
 				EED1967A29B4DF080010579C /* ContentView.swift */,
+				EED1969D29B637F90010579C /* NewTaskItemView.swift */,
+				EED196A129B644570010579C /* ListRowItemView.swift */,
+				EED1969F29B63C0E0010579C /* BlankView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -126,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				EED1969B29B6360D0010579C /* Constant.swift */,
+				EED196A529B64A980010579C /* SoundPlayer.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -133,6 +147,7 @@
 		EED1969629B4ECDF0010579C /* Style */ = {
 			isa = PBXGroup;
 			children = (
+				EED196A329B6468C0010579C /* CheckBoxStyle.swift */,
 			);
 			path = Style;
 			sourceTree = "<group>";
@@ -219,10 +234,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EED196A429B6468C0010579C /* CheckBoxStyle.swift in Sources */,
+				EED196A229B644570010579C /* ListRowItemView.swift in Sources */,
+				EED196A629B64A980010579C /* SoundPlayer.swift in Sources */,
+				EED1969E29B637F90010579C /* NewTaskItemView.swift in Sources */,
 				EED1968229B4DF090010579C /* Persistence.swift in Sources */,
 				EED1967B29B4DF080010579C /* ContentView.swift in Sources */,
 				EED1969A29B6343E0010579C /* HideKeyboardExtension.swift in Sources */,
 				EED1968529B4DF090010579C /* Taskmaster.xcdatamodeld in Sources */,
+				EED196A029B63C0E0010579C /* BlankView.swift in Sources */,
 				EED1967929B4DF080010579C /* TaskmasterApp.swift in Sources */,
 				EED1969C29B6360D0010579C /* Constant.swift in Sources */,
 			);
