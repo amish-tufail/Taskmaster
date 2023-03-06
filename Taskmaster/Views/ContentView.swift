@@ -68,6 +68,17 @@ struct ContentView: View {
                     List {
                         ForEach(items) { item in
                             ListRowItemView(item: item)
+                                .onChange(of: item.completion) { newValue in
+                                    withAnimation(.easeOut(duration: 0.25)) {
+                                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.75) {
+                                            if item.completion {
+                                                viewContext.delete(item)
+                                            } else {
+                                               try? viewContext.save()
+                                            }
+                                        }
+                                    }
+                                }
                         }
                         .onDelete(perform: deleteItems)
                     }
