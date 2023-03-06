@@ -23,7 +23,44 @@
 		EED196A229B644570010579C /* ListRowItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED196A129B644570010579C /* ListRowItemView.swift */; };
 		EED196A429B6468C0010579C /* CheckBoxStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED196A329B6468C0010579C /* CheckBoxStyle.swift */; };
 		EED196A629B64A980010579C /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED196A529B64A980010579C /* SoundPlayer.swift */; };
+		EED196AE29B657EB0010579C /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EED196AD29B657EA0010579C /* WidgetKit.framework */; };
+		EED196B029B657EB0010579C /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EED196AF29B657EB0010579C /* SwiftUI.framework */; };
+		EED196B329B657EB0010579C /* TaskMasterWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED196B229B657EB0010579C /* TaskMasterWidgetBundle.swift */; };
+		EED196B729B657EB0010579C /* TaskMasterWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED196B629B657EB0010579C /* TaskMasterWidget.swift */; };
+		EED196B929B657EC0010579C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EED196B829B657EC0010579C /* Assets.xcassets */; };
+		EED196BD29B657EC0010579C /* TaskMasterWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = EED196AB29B657EA0010579C /* TaskMasterWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EED196C229B65B210010579C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EED1967C29B4DF090010579C /* Assets.xcassets */; };
+		EED196C929B65C160010579C /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED1969B29B6360D0010579C /* Constant.swift */; };
+		EED196CA29B65D340010579C /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED1968129B4DF090010579C /* Persistence.swift */; };
+		EED196CB29B65D370010579C /* Taskmaster.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EED1968329B4DF090010579C /* Taskmaster.xcdatamodeld */; };
+		EED196CC29B65D8A0010579C /* ListRowItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED196A129B644570010579C /* ListRowItemView.swift */; };
+		EED196CD29B65DD10010579C /* CheckBoxStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED196A329B6468C0010579C /* CheckBoxStyle.swift */; };
+		EED196CE29B65DE30010579C /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED196A529B64A980010579C /* SoundPlayer.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EED196BB29B657EC0010579C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EED1966D29B4DF080010579C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EED196AA29B657EA0010579C;
+			remoteInfo = TaskMasterWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EED196C129B657EC0010579C /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				EED196BD29B657EC0010579C /* TaskMasterWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		EED1967529B4DF080010579C /* Taskmaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Taskmaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +81,13 @@
 		EED196A129B644570010579C /* ListRowItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowItemView.swift; sourceTree = "<group>"; };
 		EED196A329B6468C0010579C /* CheckBoxStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxStyle.swift; sourceTree = "<group>"; };
 		EED196A529B64A980010579C /* SoundPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
+		EED196AB29B657EA0010579C /* TaskMasterWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TaskMasterWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		EED196AD29B657EA0010579C /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		EED196AF29B657EB0010579C /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		EED196B229B657EB0010579C /* TaskMasterWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskMasterWidgetBundle.swift; sourceTree = "<group>"; };
+		EED196B629B657EB0010579C /* TaskMasterWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskMasterWidget.swift; sourceTree = "<group>"; };
+		EED196B829B657EC0010579C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EED196BA29B657EC0010579C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +98,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EED196A829B657EA0010579C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EED196B029B657EB0010579C /* SwiftUI.framework in Frameworks */,
+				EED196AE29B657EB0010579C /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -61,6 +114,8 @@
 			isa = PBXGroup;
 			children = (
 				EED1967729B4DF080010579C /* Taskmaster */,
+				EED196B129B657EB0010579C /* TaskMasterWidget */,
+				EED196AC29B657EA0010579C /* Frameworks */,
 				EED1967629B4DF080010579C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -69,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				EED1967529B4DF080010579C /* Taskmaster.app */,
+				EED196AB29B657EA0010579C /* TaskMasterWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -161,6 +217,26 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		EED196AC29B657EA0010579C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EED196AD29B657EA0010579C /* WidgetKit.framework */,
+				EED196AF29B657EB0010579C /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EED196B129B657EB0010579C /* TaskMasterWidget */ = {
+			isa = PBXGroup;
+			children = (
+				EED196B229B657EB0010579C /* TaskMasterWidgetBundle.swift */,
+				EED196B629B657EB0010579C /* TaskMasterWidget.swift */,
+				EED196B829B657EC0010579C /* Assets.xcassets */,
+				EED196BA29B657EC0010579C /* Info.plist */,
+			);
+			path = TaskMasterWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -171,15 +247,34 @@
 				EED1967129B4DF080010579C /* Sources */,
 				EED1967229B4DF080010579C /* Frameworks */,
 				EED1967329B4DF080010579C /* Resources */,
+				EED196C129B657EC0010579C /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				EED196BC29B657EC0010579C /* PBXTargetDependency */,
 			);
 			name = Taskmaster;
 			productName = Taskmaster;
 			productReference = EED1967529B4DF080010579C /* Taskmaster.app */;
 			productType = "com.apple.product-type.application";
+		};
+		EED196AA29B657EA0010579C /* TaskMasterWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EED196BE29B657EC0010579C /* Build configuration list for PBXNativeTarget "TaskMasterWidgetExtension" */;
+			buildPhases = (
+				EED196A729B657EA0010579C /* Sources */,
+				EED196A829B657EA0010579C /* Frameworks */,
+				EED196A929B657EA0010579C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TaskMasterWidgetExtension;
+			productName = TaskMasterWidgetExtension;
+			productReference = EED196AB29B657EA0010579C /* TaskMasterWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -192,6 +287,9 @@
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
 					EED1967429B4DF080010579C = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					EED196AA29B657EA0010579C = {
 						CreatedOnToolsVersion = 14.2;
 					};
 				};
@@ -210,6 +308,7 @@
 			projectRoot = "";
 			targets = (
 				EED1967429B4DF080010579C /* Taskmaster */,
+				EED196AA29B657EA0010579C /* TaskMasterWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -224,6 +323,15 @@
 				EED1968029B4DF090010579C /* Preview Assets.xcassets in Resources */,
 				EED1969029B4E0890010579C /* sound-tap.mp3 in Resources */,
 				EED1967D29B4DF090010579C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EED196A929B657EA0010579C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EED196C229B65B210010579C /* Assets.xcassets in Resources */,
+				EED196B929B657EC0010579C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,7 +356,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EED196A729B657EA0010579C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EED196CC29B65D8A0010579C /* ListRowItemView.swift in Sources */,
+				EED196CB29B65D370010579C /* Taskmaster.xcdatamodeld in Sources */,
+				EED196CE29B65DE30010579C /* SoundPlayer.swift in Sources */,
+				EED196B329B657EB0010579C /* TaskMasterWidgetBundle.swift in Sources */,
+				EED196CA29B65D340010579C /* Persistence.swift in Sources */,
+				EED196CD29B65DD10010579C /* CheckBoxStyle.swift in Sources */,
+				EED196B729B657EB0010579C /* TaskMasterWidget.swift in Sources */,
+				EED196C929B65C160010579C /* Constant.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EED196BC29B657EC0010579C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EED196AA29B657EA0010579C /* TaskMasterWidgetExtension */;
+			targetProxy = EED196BB29B657EC0010579C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		EED1968629B4DF090010579C /* Debug */ = {
@@ -368,6 +499,7 @@
 		EED1968929B4DF090010579C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -396,6 +528,7 @@
 		EED1968A29B4DF090010579C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -421,6 +554,60 @@
 			};
 			name = Release;
 		};
+		EED196BF29B657EC0010579C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZC8Z8DCUY6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TaskMasterWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TaskMasterWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.amish.Taskmaster.TaskMasterWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EED196C029B657EC0010579C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZC8Z8DCUY6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TaskMasterWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TaskMasterWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.amish.Taskmaster.TaskMasterWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -438,6 +625,15 @@
 			buildConfigurations = (
 				EED1968929B4DF090010579C /* Debug */,
 				EED1968A29B4DF090010579C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EED196BE29B657EC0010579C /* Build configuration list for PBXNativeTarget "TaskMasterWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EED196BF29B657EC0010579C /* Debug */,
+				EED196C029B657EC0010579C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
