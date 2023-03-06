@@ -13,6 +13,11 @@
 		EED1968029B4DF090010579C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EED1967F29B4DF090010579C /* Preview Assets.xcassets */; };
 		EED1968229B4DF090010579C /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED1968129B4DF090010579C /* Persistence.swift */; };
 		EED1968529B4DF090010579C /* Taskmaster.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EED1968329B4DF090010579C /* Taskmaster.xcdatamodeld */; };
+		EED1968E29B4E0890010579C /* sound-rise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EED1968B29B4E0890010579C /* sound-rise.mp3 */; };
+		EED1968F29B4E0890010579C /* sound-ding.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EED1968C29B4E0890010579C /* sound-ding.mp3 */; };
+		EED1969029B4E0890010579C /* sound-tap.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EED1968D29B4E0890010579C /* sound-tap.mp3 */; };
+		EED1969A29B6343E0010579C /* HideKeyboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED1969929B6343E0010579C /* HideKeyboardExtension.swift */; };
+		EED1969C29B6360D0010579C /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED1969B29B6360D0010579C /* Constant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +28,12 @@
 		EED1967F29B4DF090010579C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EED1968129B4DF090010579C /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		EED1968429B4DF090010579C /* Taskmaster.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Taskmaster.xcdatamodel; sourceTree = "<group>"; };
+		EED1968B29B4E0890010579C /* sound-rise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-rise.mp3"; sourceTree = "<group>"; };
+		EED1968C29B4E0890010579C /* sound-ding.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-ding.mp3"; sourceTree = "<group>"; };
+		EED1968D29B4E0890010579C /* sound-tap.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-tap.mp3"; sourceTree = "<group>"; };
+		EED1969829B4ED4A0010579C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		EED1969929B6343E0010579C /* HideKeyboardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideKeyboardExtension.swift; sourceTree = "<group>"; };
+		EED1969B29B6360D0010579C /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +66,15 @@
 		EED1967729B4DF080010579C /* Taskmaster */ = {
 			isa = PBXGroup;
 			children = (
-				EED1967829B4DF080010579C /* TaskmasterApp.swift */,
-				EED1967A29B4DF080010579C /* ContentView.swift */,
+				EED1969329B4ECC80010579C /* App */,
+				EED1969729B4ECEE0010579C /* Model */,
+				EED1969229B4ECBE0010579C /* Views */,
+				EED1969629B4ECDF0010579C /* Style */,
+				EED1969529B4ECD70010579C /* Utilities */,
+				EED1969429B4ECD00010579C /* Extension */,
 				EED1967C29B4DF090010579C /* Assets.xcassets */,
-				EED1968129B4DF090010579C /* Persistence.swift */,
-				EED1968329B4DF090010579C /* Taskmaster.xcdatamodeld */,
+				EED1969129B4E08D0010579C /* Sounds */,
+				EED1969829B4ED4A0010579C /* Info.plist */,
 				EED1967E29B4DF090010579C /* Preview Content */,
 			);
 			path = Taskmaster;
@@ -71,6 +86,64 @@
 				EED1967F29B4DF090010579C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EED1969129B4E08D0010579C /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				EED1968C29B4E0890010579C /* sound-ding.mp3 */,
+				EED1968B29B4E0890010579C /* sound-rise.mp3 */,
+				EED1968D29B4E0890010579C /* sound-tap.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		EED1969229B4ECBE0010579C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EED1967A29B4DF080010579C /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EED1969329B4ECC80010579C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				EED1967829B4DF080010579C /* TaskmasterApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		EED1969429B4ECD00010579C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EED1969929B6343E0010579C /* HideKeyboardExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		EED1969529B4ECD70010579C /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				EED1969B29B6360D0010579C /* Constant.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		EED1969629B4ECDF0010579C /* Style */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		EED1969729B4ECEE0010579C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EED1968129B4DF090010579C /* Persistence.swift */,
+				EED1968329B4DF090010579C /* Taskmaster.xcdatamodeld */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,7 +204,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EED1968F29B4E0890010579C /* sound-ding.mp3 in Resources */,
+				EED1968E29B4E0890010579C /* sound-rise.mp3 in Resources */,
 				EED1968029B4DF090010579C /* Preview Assets.xcassets in Resources */,
+				EED1969029B4E0890010579C /* sound-tap.mp3 in Resources */,
 				EED1967D29B4DF090010579C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -145,8 +221,10 @@
 			files = (
 				EED1968229B4DF090010579C /* Persistence.swift in Sources */,
 				EED1967B29B4DF080010579C /* ContentView.swift in Sources */,
+				EED1969A29B6343E0010579C /* HideKeyboardExtension.swift in Sources */,
 				EED1968529B4DF090010579C /* Taskmaster.xcdatamodeld in Sources */,
 				EED1967929B4DF080010579C /* TaskmasterApp.swift in Sources */,
+				EED1969C29B6360D0010579C /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,11 +356,10 @@
 				DEVELOPMENT_TEAM = ZC8Z8DCUY6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Taskmaster/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,11 +384,10 @@
 				DEVELOPMENT_TEAM = ZC8Z8DCUY6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Taskmaster/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
